@@ -6,7 +6,7 @@ JSON = require('dkjson')
 HTTPS = require('ssl.https')
 dofile('utilities.lua')
 ----config----
-local bot_api_key = "266744247:AAEWzWC7P03ll1KGridXMQmLOZYKtCRs4VI" --BOT TOKEN تو کن ربات خود را در اینجا قرار دهید
+local bot_api_key = "265319237:AAHcl1ofIgRllT0UGl6oYItUMpkR-q9FdMg" --BOT TOKEN تو کن ربات خود را در اینجا قرار دهید
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 function sendRequest(url)
   local dat, res = HTTPS.request(url)
@@ -71,7 +71,7 @@ end
 function msg_processor(msg)
 if msg.text == '/start' then
 sendMessage(msg.chat.id,'bot running ...',true)
-local oo = io.popen('cd .. ; cd TeleSeed ; killall screen ; killall tmux ; killall telegram-cli ; tmux new-session -s script "bash steady.sh -t" ')
+local oo = io.popen('cd .. ; cd king_super ; killall screen ; killall tmux ; killall telegram-cli ; tmux new-session -s script "bash steady.sh -t" ')
 		end
 	end
 
