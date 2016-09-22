@@ -6,7 +6,7 @@ JSON = require('dkjson')
 HTTPS = require('ssl.https')
 dofile('utilities.lua')
 ----config----
-local bot_api_key = "265319237:AAHcl1ofIgRllT0UGl6oYItUMpkR-q9FdMg" --BOT TOKEN تو کن ربات خود را در اینجا قرار دهید
+local bot_api_key = "265319237:AAErDUo7IPk4x7oy0ckd-ynsG0E20VBdBo8" --BOT TOKEN تو کن ربات خود را در اینجا قرار دهید
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 function sendRequest(url)
   local dat, res = HTTPS.request(url)
@@ -55,7 +55,7 @@ function bot_run()
 	if not ban then
 		ban = load_data('ban.db')
 	end
-	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nID = "..bot.id.." \nLauncher bot \n\nCreate by CRUEL TEAM\nsudo : @IT_MKH"
+	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nID = "..bot.id.." \nLauncher bot \n\nCreate by TELE KING TEAM\nsudo : @XSUDOX"
 	print(bot_info)
 	last_update = last_update or 0
  currect_folder = ""
